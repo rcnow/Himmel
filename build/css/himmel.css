@@ -6,6 +6,390 @@
  * Version: 0.0.1
  */
 body {
+  font-size: 100%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #6d6d6d;
   background-color: white;
-  color: black;
+  line-height: 150%;
+  padding: 0;
+  margin: 10px;
+}
+
+a {
+  color: dimgrey;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover, a:focus {
+  color: #f89506;
+}
+a:focus {
+  outline: none;
+}
+
+abbr, acronym {
+  text-transform: uppercase;
+  border-bottom: 1px dotted dimgrey;
+  cursor: help;
+}
+
+address {
+  padding: 0;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+blockquote {
+  padding-left: 10px;
+  display: block;
+  margin: 10px 0;
+  border-left: 3px solid #f89506;
+}
+
+cite {
+  font-style: italic;
+}
+cite:before {
+  content: "\2014";
+}
+
+code {
+  color: #b20816;
+  white-space: nowrap;
+  font-size: 80%;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+del, s {
+  text-decoration: line-through;
+}
+
+dfn, em, i {
+  font-style: italic;
+}
+
+hr {
+  padding: 0;
+  margin: 10px 0;
+  border-top: 1px solid #6d6d6d;
+  border-bottom: 1px solid white;
+}
+
+img {
+  padding: 0;
+  margin: 10px 0;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+kbd {
+  padding: 5px;
+  background-color: #f2f2f2;
+  font-size: 100%;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+p {
+  padding: 0;
+  margin: 10px 0;
+  display: block;
+}
+
+pre {
+  padding: 0;
+  margin: 10px 0;
+  display: block;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+q {
+  color: #810610;
+}
+q:after, q:before {
+  quotes: "\0022" "\0022";
+}
+
+samp {
+  padding: 5px;
+  background: #f2f2f2;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+small {
+  font-size: 99.875%;
+}
+
+span {
+  padding: 0;
+  margin: 10px;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: 99.875%;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 99.875%;
+}
+
+var {
+  color: #6d6d6d;
+  font-style: italic;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  padding: 0;
+  margin: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 10px 0;
+  display: block;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 225%;
+}
+
+h2 {
+  font-size: 212.5%;
+}
+
+h3 {
+  font-size: 200%;
+}
+
+h4 {
+  font-size: 175%;
+}
+
+h5 {
+  font-size: 150%;
+}
+
+h6 {
+  font-size: 125%;
+}
+
+form {
+  padding: 0;
+  margin: 10px 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+label {
+  cursor: pointer;
+}
+
+dl {
+  padding: 0;
+  margin: 10px 0;
+}
+dl dt {
+  font-weight: bold;
+  color: #6d6d6d;
+}
+dl dd {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+ol {
+  padding-left: 40px;
+  margin: 10px 0;
+  list-style-type: decimal;
+}
+ol li {
+  color: #6d6d6d;
+}
+
+ul {
+  padding-left: 40px;
+  margin: 10px 0;
+  list-style-type: square;
+}
+ul li {
+  color: #6d6d6d;
+}
+
+table {
+  padding: 0;
+  margin: 10px 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  color: #eeeeee;
+}
+
+th, td {
+  color: #6d6d6d;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+}
+
+thead th {
+  color: #6d6d6d;
+  font-weight: bold;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+tbody th {
+  color: #6d6d6d;
+  font-weight: normal;
+}
+
+tfoot {
+  color: #6d6d6d;
+}
+
+caption {
+  color: dimgrey;
+  text-align: center;
+  display: table-caption;
+}
+
+article {
+  color: #6d6d6d;
+}
+
+aside {
+  color: #6d6d6d;
+}
+
+audio, video {
+  display: block;
+}
+audio:focus, video:focus {
+  outline: none;
+}
+
+canvas {
+  width: auto;
+  height: auto;
+}
+
+datalist {
+  color: #6d6d6d;
+}
+
+details {
+  display: inline-block;
+}
+details:focus {
+  outline: none;
+}
+
+summary {
+  color: dimgrey;
+}
+
+figcaption {
+  color: #6d6d6d;
+}
+
+figure {
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+footer {
+  margin: 10px 0;
+}
+
+header {
+  padding: 0;
+  margin: 10px 0;
+}
+
+mark {
+  padding: 5px;
+  border: 1px dotted dimgrey;
+  background-color: #f2f2f2;
+}
+
+menu {
+  padding: 0;
+  margin: 0;
+}
+
+meter {
+  margin: 10px 0;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+ruby {
+  text-indent: 0;
+}
+ruby rt {
+  display: block;
+  font-size: 99.875%;
+  line-height: normal;
+}
+ruby rp {
+  display: block;
+  font-size: 99.875%;
+  line-height: normal;
+}
+
+section {
+  padding: 0;
+  margin: 10px 0;
+}
+
+time {
+  border: 1px solid dimgrey;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
 }

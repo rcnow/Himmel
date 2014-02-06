@@ -1,10 +1,242 @@
 @import "variables"
 
+//-------------------------------Main----------------------------
+//Body
 body
-  background-color: $body-bg-color
+  font-size: $base-font-size
+  font-family: $base-font-family-sans
   color: $body-font-color
-
-
-
-
-
+  background-color: $body-bg-color
+  line-height: $base-line-height
+  padding: 0
+  margin: $base-margin
+a
+  color: $grey-color
+  text-decoration: none
+  cursor: pointer
+  &:hover,&:focus
+    color: $orange-color
+  &:focus
+    outline: none
+abbr,acronym
+  text-transform: uppercase
+  border-bottom: 1px dotted $grey-color
+  cursor: help
+address
+  padding: 0
+  margin: $base-margin 0
+  font-style: italic
+b,strong
+  font-weight: bold
+blockquote
+  padding-left: $base-padding
+  display: block
+  margin: $base-margin 0
+  border-left: 3px solid $orange-color
+cite
+  font-style: italic
+  &:before
+    content: "\2014"
+code
+  color: darken($error-color, 20%)
+  white-space: nowrap
+  font-size: $base-font-size - 20
+  font-family: $base-font-family-mono
+del, s
+  text-decoration: line-through
+dfn, em, i
+  font-style: italic
+hr
+  padding: 0
+  margin: $base-margin 0
+  border-top: 1px solid $body-font-color
+  border-bottom: 1px solid $body-bg-color
+img
+  padding: 0
+  margin: $base-margin 0
+ins
+  text-decoration: underline
+kbd
+  padding: $base-padding / 2
+  background-color: darken($body-bg-color , 5%)
+  font-size: $base-font-size
+  font-family: $base-font-family-mono
+p
+  padding: 0
+  margin: $base-margin 0
+  display: block
+pre
+  padding: 0
+  margin: $base-margin 0
+  display: block
+  word-break: break-all
+  word-wrap: break-word
+  white-space: pre-wrap
+  font-family: $base-font-family-mono
+q
+  color: darken($error-color, 30%)
+  &:after,&:before
+    quotes: "\0022" "\0022"
+samp
+  padding: $base-padding / 2
+  background: darken($body-bg-color, 5%)
+  font-family: $base-font-family-mono
+small
+  font-size: $base-font-size - 0.125
+span
+  padding: 0
+  margin: $base-margin
+sub
+  vertical-align: sub
+  font-size: $base-font-size - 0.125
+sup
+  vertical-align: super
+  font-size: $base-font-size - 0.125
+var
+  color: $body-font-color
+  font-style: italic
+input[type="checkbox"],input[type="radio"]
+  padding: 0
+  margin: $base-margin 0
+//-------------------------------Heading-------------------------
+h1,h2,h3,h4,h5,h6
+  padding: 0
+  margin: $base-margin 0
+  display: block
+  font-weight: bold
+h1
+  font-size: $base-font-size*2.25
+h2
+  font-size: $base-font-size*2.125
+h3
+  font-size: $base-font-size*2
+h4
+  font-size: $base-font-size*1.75
+h5
+  font-size: $base-font-size*1.5
+h6
+  font-size: $base-font-size*1.25
+//-------------------------------Forms---------------------------
+form
+  padding: 0
+  margin: $base-margin 0
+fieldset
+  border: none
+  padding: 0
+  margin: 0
+legend
+  padding: 0
+  margin: $base-margin 0
+  font-weight: bold
+label
+  cursor: pointer
+//-------------------------------List----------------------------
+dl
+  padding: 0
+  margin: $base-margin 0
+  dt
+    font-weight: bold
+    color: $body-font-color
+  dd
+    padding: 0
+    margin: 0
+    font-style: italic
+ol
+  padding-left: $base-padding * 4
+  margin: $base-margin 0
+  list-style-type: decimal
+  li
+    color: $body-font-color
+ul
+  padding-left: $base-padding * 4
+  margin: $base-margin 0
+  list-style-type: square
+  li
+    color: $body-font-color
+//-------------------------------Table---------------------------
+table
+  padding: 0
+  margin: $base-margin 0
+  width: 100%
+  border-collapse: collapse
+tr
+  color: $greyLigth-color
+th, td
+  color: $body-font-color
+  padding: $base-padding
+  margin: 0
+  text-align: center
+  border: 1px solid darken($body-bg-color, 10%)
+thead th
+  color: $body-font-color
+  font-weight: bold
+thead
+  background-color: darken($body-bg-color,5%)
+tbody th
+  color:  $body-font-color
+  font-weight: normal
+tfoot
+  color:  $body-font-color
+caption
+  color: $grey-color
+  text-align: center
+  display: table-caption
+//-------------------------------HTML 5--------------------------
+article
+  color: $body-font-color
+aside
+  color: $body-font-color
+audio,video
+  display: block
+  &:focus
+    outline: none
+canvas
+  width: auto
+  height: auto
+datalist
+  color: $body-font-color
+details
+  display: inline-block
+  &:focus
+    outline: none
+summary
+  color: $grey-color
+figcaption
+  color: $body-font-color
+figure
+  padding: $base-padding
+  margin: $base-margin 0
+  display: inline-block
+  text-align: center
+  background-color: darken($body-bg-color , 5%)
+footer
+  margin: $base-margin 0
+header
+  padding: 0
+  margin: $base-margin 0
+mark
+  padding: $base-padding / 2
+  border: 1px dotted $grey-color
+  background-color: darken($body-bg-color , 5%)
+menu
+  padding: 0
+  margin: 0
+meter
+  margin: $base-margin 0
+nav
+  text-transform: uppercase
+ruby
+  text-indent: 0
+  rt
+    display: block
+    font-size: $base-font-size - 0.125
+    line-height: normal
+  rp
+    display: block
+    font-size: $base-font-size - 0.125
+    line-height: normal
+section
+  padding: 0
+  margin: $base-margin 0
+time
+  border: 1px solid $grey-color
