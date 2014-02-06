@@ -5,8 +5,11 @@
  * License ##
  * Version: 0.0.1
  */
-body {
+html, body {
   font-size: 100%;
+}
+
+body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: #6d6d6d;
   background-color: white;
@@ -16,20 +19,18 @@ body {
 }
 
 a {
-  color: dimgrey;
+  color: #6d6d6d;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover, a:focus {
-  color: #f89506;
-}
-a:focus {
+  color: #ffc200;
   outline: none;
 }
 
 abbr, acronym {
   text-transform: uppercase;
-  border-bottom: 1px dotted dimgrey;
+  border-bottom: 1px dotted #6d6d6d;
   cursor: help;
 }
 
@@ -47,7 +48,7 @@ blockquote {
   padding-left: 10px;
   display: block;
   margin: 10px 0;
-  border-left: 3px solid #f89506;
+  border-left: 3px solid #ffc200;
 }
 
 cite {
@@ -60,7 +61,6 @@ cite:before {
 code {
   color: #b20816;
   white-space: nowrap;
-  font-size: 80%;
   font-family: "Lucida Console", Monaco, monospace;
 }
 
@@ -91,7 +91,6 @@ ins {
 kbd {
   padding: 5px;
   background-color: #f2f2f2;
-  font-size: 100%;
   font-family: "Lucida Console", Monaco, monospace;
 }
 
@@ -125,7 +124,7 @@ samp {
 }
 
 small {
-  font-size: 99.875%;
+  font-size: 80%;
 }
 
 span {
@@ -135,12 +134,12 @@ span {
 
 sub {
   vertical-align: sub;
-  font-size: 99.875%;
+  font-size: 80%;
 }
 
 sup {
   vertical-align: super;
-  font-size: 99.875%;
+  font-size: 80%;
 }
 
 var {
@@ -153,34 +152,51 @@ input[type="checkbox"], input[type="radio"] {
   margin: 10px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   padding: 0;
   margin: 10px 0;
   display: block;
   font-weight: bold;
-}
-
-h1 {
   font-size: 225%;
 }
 
 h2 {
+  padding: 0;
+  margin: 10px 0;
+  display: block;
+  font-weight: bold;
   font-size: 212.5%;
 }
 
 h3 {
+  padding: 0;
+  margin: 10px 0;
+  display: block;
+  font-weight: bold;
   font-size: 200%;
 }
 
 h4 {
+  padding: 0;
+  margin: 10px 0;
+  display: block;
+  font-weight: bold;
   font-size: 175%;
 }
 
 h5 {
+  padding: 0;
+  margin: 10px 0;
+  display: block;
+  font-weight: bold;
   font-size: 150%;
 }
 
 h6 {
+  padding: 0;
+  margin: 10px 0;
+  display: block;
+  font-weight: bold;
   font-size: 125%;
 }
 
@@ -244,10 +260,6 @@ table {
   border-collapse: collapse;
 }
 
-tr {
-  color: #eeeeee;
-}
-
 th, td {
   color: #6d6d6d;
   padding: 10px;
@@ -275,7 +287,7 @@ tfoot {
 }
 
 caption {
-  color: dimgrey;
+  color: #6d6d6d;
   text-align: center;
   display: table-caption;
 }
@@ -291,9 +303,6 @@ aside {
 audio, video {
   display: block;
 }
-audio:focus, video:focus {
-  outline: none;
-}
 
 canvas {
   width: auto;
@@ -307,12 +316,9 @@ datalist {
 details {
   display: inline-block;
 }
-details:focus {
-  outline: none;
-}
 
 summary {
-  color: dimgrey;
+  color: #6d6d6d;
 }
 
 figcaption {
@@ -338,7 +344,7 @@ header {
 
 mark {
   padding: 5px;
-  border: 1px dotted dimgrey;
+  border: 1px dotted #6d6d6d;
   background-color: #f2f2f2;
 }
 
@@ -360,12 +366,12 @@ ruby {
 }
 ruby rt {
   display: block;
-  font-size: 99.875%;
+  font-size: 80%;
   line-height: normal;
 }
 ruby rp {
   display: block;
-  font-size: 99.875%;
+  font-size: 80%;
   line-height: normal;
 }
 
@@ -375,7 +381,7 @@ section {
 }
 
 time {
-  border: 1px solid dimgrey;
+  font-style: italic;
 }
 
 .text-center {

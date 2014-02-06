@@ -2,8 +2,9 @@
 
 //-------------------------------Main----------------------------
 //Body
-body
+html,body
   font-size: $base-font-size
+body
   font-family: $base-font-family-sans
   color: $body-font-color
   background-color: $body-bg-color
@@ -11,16 +12,15 @@ body
   padding: 0
   margin: $base-margin
 a
-  color: $grey-color
+  color: $body-font-color
   text-decoration: none
   cursor: pointer
   &:hover,&:focus
-    color: $orange-color
-  &:focus
+    color: $warning-color
     outline: none
 abbr,acronym
   text-transform: uppercase
-  border-bottom: 1px dotted $grey-color
+  border-bottom: 1px dotted $body-font-color
   cursor: help
 address
   padding: 0
@@ -32,7 +32,7 @@ blockquote
   padding-left: $base-padding
   display: block
   margin: $base-margin 0
-  border-left: 3px solid $orange-color
+  border-left: 3px solid $warning-color
 cite
   font-style: italic
   &:before
@@ -40,7 +40,6 @@ cite
 code
   color: darken($error-color, 20%)
   white-space: nowrap
-  font-size: $base-font-size - 20
   font-family: $base-font-family-mono
 del, s
   text-decoration: line-through
@@ -59,7 +58,6 @@ ins
 kbd
   padding: $base-padding / 2
   background-color: darken($body-bg-color , 5%)
-  font-size: $base-font-size
   font-family: $base-font-family-mono
 p
   padding: 0
@@ -82,16 +80,16 @@ samp
   background: darken($body-bg-color, 5%)
   font-family: $base-font-family-mono
 small
-  font-size: $base-font-size - 0.125
+  font-size: $base-font-size - 20
 span
   padding: 0
   margin: $base-margin
 sub
   vertical-align: sub
-  font-size: $base-font-size - 0.125
+  font-size: $base-font-size - 20
 sup
   vertical-align: super
-  font-size: $base-font-size - 0.125
+  font-size: $base-font-size - 20
 var
   color: $body-font-color
   font-style: italic
@@ -99,22 +97,41 @@ input[type="checkbox"],input[type="radio"]
   padding: 0
   margin: $base-margin 0
 //-------------------------------Heading-------------------------
-h1,h2,h3,h4,h5,h6
+h1
   padding: 0
   margin: $base-margin 0
   display: block
   font-weight: bold
-h1
   font-size: $base-font-size*2.25
 h2
+  padding: 0
+  margin: $base-margin 0
+  display: block
+  font-weight: bold
   font-size: $base-font-size*2.125
 h3
+  padding: 0
+  margin: $base-margin 0
+  display: block
+  font-weight: bold
   font-size: $base-font-size*2
 h4
+  padding: 0
+  margin: $base-margin 0
+  display: block
+  font-weight: bold
   font-size: $base-font-size*1.75
 h5
+  padding: 0
+  margin: $base-margin 0
+  display: block
+  font-weight: bold
   font-size: $base-font-size*1.5
 h6
+  padding: 0
+  margin: $base-margin 0
+  display: block
+  font-weight: bold
   font-size: $base-font-size*1.25
 //-------------------------------Forms---------------------------
 form
@@ -159,8 +176,6 @@ table
   margin: $base-margin 0
   width: 100%
   border-collapse: collapse
-tr
-  color: $greyLigth-color
 th, td
   color: $body-font-color
   padding: $base-padding
@@ -178,7 +193,7 @@ tbody th
 tfoot
   color:  $body-font-color
 caption
-  color: $grey-color
+  color: $body-font-color
   text-align: center
   display: table-caption
 //-------------------------------HTML 5--------------------------
@@ -188,8 +203,6 @@ aside
   color: $body-font-color
 audio,video
   display: block
-  &:focus
-    outline: none
 canvas
   width: auto
   height: auto
@@ -197,10 +210,8 @@ datalist
   color: $body-font-color
 details
   display: inline-block
-  &:focus
-    outline: none
 summary
-  color: $grey-color
+  color: $body-font-color
 figcaption
   color: $body-font-color
 figure
@@ -216,7 +227,7 @@ header
   margin: $base-margin 0
 mark
   padding: $base-padding / 2
-  border: 1px dotted $grey-color
+  border: 1px dotted $body-font-color
   background-color: darken($body-bg-color , 5%)
 menu
   padding: 0
@@ -229,14 +240,14 @@ ruby
   text-indent: 0
   rt
     display: block
-    font-size: $base-font-size - 0.125
+    font-size: $base-font-size - 20
     line-height: normal
   rp
     display: block
-    font-size: $base-font-size - 0.125
+    font-size: $base-font-size - 20
     line-height: normal
 section
   padding: 0
   margin: $base-margin 0
 time
-  border: 1px solid $grey-color
+  font-style: italic
