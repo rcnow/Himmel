@@ -1,7 +1,7 @@
 /*
  * Himmel CSS Framework
  * Author: DAmlex
- * Site: ##
+ * Site: https://github.com/rcnow/Himmel
  * License ##
  * Version: 0.0.1
  */
@@ -398,4 +398,71 @@ time {
 
 .text-justify {
   text-align: justify;
+}
+
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+.row [class*="colum"] {
+  float: left;
+  margin-left: 0.55%;
+  position: relative;
+  margin-top: 0.55%;
+  margin-bottom: 0.55%;
+}
+.row [class*="colum"]:first-child {
+  margin-left: 0;
+}
+
+.colum1 {
+  width: 7.82917%;
+}
+
+.colum2 {
+  width: 16.20833%;
+}
+
+.colum3 {
+  width: 24.5875%;
+}
+
+.colum4 {
+  width: 32.96667%;
+}
+
+.colum5 {
+  width: 41.34583%;
+}
+
+.colum6 {
+  width: 49.725%;
+}
+
+.colum7 {
+  width: 58.10417%;
+}
+
+.colum8 {
+  width: 66.48333%;
+}
+
+.colum9 {
+  width: 74.8625%;
+}
+
+.colum10 {
+  width: 83.24167%;
+}
+
+.colum11 {
+  width: 91.62083%;
+}
+
+.colum12 {
+  width: 100%;
+}
+
+.panel {
+  background-color: #c3c3c3;
 }

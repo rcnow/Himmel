@@ -1,0 +1,16 @@
+@import "variables"
+
+.row
+  width: 100%
+  [class*="colum"]
+    float: left
+    margin-left: $grid-gutters
+    position: relative
+    margin-top: .55%
+    margin-bottom: .55%
+    &:first-child
+      margin-left: 0
+  overflow: hidden
+@for  $i from 1 through $grid-colums
+  .colum#{$i}
+    width:  ($colum-size * $i) + ($grid-gutters * ($i - 1))
