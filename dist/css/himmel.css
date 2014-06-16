@@ -1,10 +1,10 @@
-/*
- * Himmel CSS Framework
- * Author: DAmlex
- * Site: https://github.com/rcnow/Himmel
- * License ##
- * Version: 0.0.1
+/*!
+ * Himmel CSS Framework || (https://github.com/rcnow/Himmel)
+ * Version - 0.0.1
+ * Copyright (c) 2014 DAmlex
+ * License  none () 
  */
+
 html, body {
   font-size: 100%;
 }
@@ -466,3 +466,5 @@ time {
 .panel {
   background-color: #c3c3c3;
 }
+
+/*# sourceMappingURL=himmel.css.map */
