@@ -405,6 +405,10 @@ time {
   width: 100%;
   overflow: hidden;
 }
+.row.row-center {
+  margin: 0 auto;
+  max-width: 960px;
+}
 .row [class*="colum"] {
   float: left;
   margin-left: 0.55%;
