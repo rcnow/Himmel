@@ -54,4 +54,5 @@ module.exports = function(grunt) {
 
     //Task
     grunt.registerTask('default',['watch']);
+    grunt.registerTask('dist',['sass','cssmin','usebanner']);
 };
