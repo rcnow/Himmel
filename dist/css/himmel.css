@@ -60,7 +60,7 @@ cite:before {
 }
 
 code {
-  color: #b20816;
+  color: #f70012;
   white-space: nowrap;
   font-family: "Lucida Console", Monaco, monospace;
 }
@@ -112,7 +112,7 @@ pre {
 }
 
 q {
-  color: #810610;
+  color: #c4000f;
 }
 q:after, q:before {
   quotes: "\0022" "\0022";
@@ -495,13 +495,13 @@ time {
   background-color: #2caa13;
 }
 .button.error {
-  background-color: #f52b3b;
+  background-color: #ff5e6a;
 }
 .button.warning {
   background-color: #ffc200;
 }
 .button.info {
-  background-color: #2477d1;
+  background-color: #8ec4ff;
 }
 
 /*# sourceMappingURL=himmel.css.map */
