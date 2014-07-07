@@ -482,9 +482,14 @@ time {
   line-height: normal;
   background-color: #ebebeb;
   border: none;
+  font-size: 90%;
+  font-family: inherit;
+  color: inherit;
 }
 .button:hover, .button:focus {
   background: #d2d2d2;
+  color: #6d6d6d;
+  text-decoration: none;
 }
 .button.success {
   background-color: #2caa13;
