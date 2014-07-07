@@ -1,0 +1,21 @@
+@import "variables"
+
+
+.button
+  padding: $base-padding + 0.2 $base-padding * 3
+  margin: $base-margin 2
+  cursor: pointer
+  text-align: center
+  vertical-align: middle
+  display: inline-block
+  line-height: normal
+  background-color: $grey-color
+  border: none
+  &:hover,&:focus
+    background: darken($grey-color, 10%)
+  &.success
+    background-color: $success-color
+  &.error
+    background-color: $error-color
+  &.warning
+    background-color: $warning-color

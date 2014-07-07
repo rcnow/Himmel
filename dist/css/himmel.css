@@ -472,4 +472,28 @@ time {
   background-color: #c3c3c3;
 }
 
+.button {
+  padding: 10.2px 30px;
+  margin: 10px 2;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: normal;
+  background-color: #c3c3c3;
+  border: none;
+}
+.button:hover, .button:focus {
+  background: #aaaaaa;
+}
+.button.success {
+  background-color: #2caa13;
+}
+.button.error {
+  background-color: #f52b3b;
+}
+.button.warning {
+  background-color: #ffc200;
+}
+
 /*# sourceMappingURL=himmel.css.map */
